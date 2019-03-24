@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
 		scanf("%d", &(seats[i]));
 		printf("Enter the manufacturer year of plane %d: ", idPlane[i]);
 		scanf("%d", &(year[i]));
-		printf("Enter plane %d utility: [COMERCIAL=0/PRIVATE=1/GOVERNMENTAL=2/MILITAR=4/EXPERIMENTAL=5/OTHERS=6] ",
+		printf("Enter plane %d utility: [COMERCIAL=0/PRIVATE=1/GOVERNMENTAL=2/MILITAR=3/EXPERIMENTAL=4/OTHERS=5] ",
 				idPlane[i]);
 		scanf("%u", &(utility[i]));
 		printf("Is plane %d active? [false=0/true=1] ", idPlane[i]);
@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
 			printf("This plane has less than average seating capacity\n");
 		}
 		printf("Manufacturer year: %d\n", year[i]);
-		printf("Utility: %u (COMERCIAL=0/PRIVATE=1/GOVERNMENTAL=2/MILITAR=4/EXPERIMENTAL=5/OTHERS=6)\n",
+		printf("Utility: %u (COMERCIAL=0/PRIVATE=1/GOVERNMENTAL=2/MILITAR=3/EXPERIMENTAL=4/OTHERS=5)\n",
 				utility[i]);
 		printf("Active: %u (0=false/1=true)\n", isActive[i]);
 		printf("---\n");
